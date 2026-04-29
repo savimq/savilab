@@ -380,6 +380,14 @@ const nextConfig = {
   }
 }
 
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export',
+  // ...請保留其他既有的設定
+};
+module.exports = nextConfig;
+
 module.exports = process.env.ANALYZE
   ? withBundleAnalyzer(nextConfig)
   : nextConfig
+
