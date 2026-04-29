@@ -378,14 +378,6 @@ const nextConfig = {
     // 这里的配置既可以服务端获取到，也可以在浏览器端获取到
     THEMES: themes
   }
-}
-
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'export',
-  // ...請保留其他既有的設定
-};
-module.exports = nextConfig;
 
 module.exports = process.env.ANALYZE
   ? withBundleAnalyzer(nextConfig)
